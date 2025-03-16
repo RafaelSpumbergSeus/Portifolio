@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  background-color: #89919;
+  background-color:#919191;
   display: flex;
   justify-content: center;
 }
@@ -25,7 +25,7 @@ body::-webkit-scrollbar {
 }
 body::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-color: #89919b; 
+  background-color: #919191; 
 }
 
 main {
@@ -42,9 +42,10 @@ header {
   height: 80px;
   position: fixed;
   top: 0;
+  left: 0;
   z-index: 999;
-  background-color: #89919;
-  box-shadow: 0 1px 0 #ececec;
+  background-color: #919191;
+  box-shadow: 0 1px 0 #919191;
   max-width: 1120px;
   width: 100%;
 }
