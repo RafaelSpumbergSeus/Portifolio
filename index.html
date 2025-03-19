@@ -4,128 +4,150 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Rafael Spumberg, a Data Science and AI professional.">
+    <meta name="keywords" content="Data Science, AI, Python, SQL, Rafael Spumberg">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="favicon.png">
-    <title>Site</title>
+    <title>Rafael Spumberg - Portfolio</title>
 </head>
 <body>
     <main>
-      <header>
-        <div class="logo">
-          <img src="5408783.png" width="50px" alt="logo">         
-        </div>
-      <div class="menu">
-        <nav class="nav-list">
-            <a href="#home">Home</a>
-            <a href="#cv">Currículo</a>
-            <a href="#projects">Projetos</a>
-            <a href="#contact">Contato</a>
-        </nav>
-      </div>
-      </header>  
+        <header>
+            <div class="logo">
+                <img src="5408783.png" width="50px" alt="Website Logo">         
+            </div>
+            <div class="menu">
+                <nav class="nav-list">
+                    <a href="#home" aria-label="Home">Home</a>
+                    <a href="#cv" aria-label="Currículo">Currículo</a>
+                    <a href="#projects" aria-label="Projetos">Projetos</a>
+                    <a href="#contact" aria-label="Contato">Contato</a>
+                </nav>
+            </div>
+        </header>  
+        
+        <section id="home">
+            <div class="home-info">
+                <div class="title">
+                    <h1>Rafael Spumberg</h1> 
+                </div>
+                <h2>Sobre</h2>
+                <span class="home-position">Ciência de Dados e Inteligência Artificial - PUCRS</span>
+                <span class="home-resume">
+                    Profissional de TI apaixonado por tecnologia, com um olhar crítico e voltado para soluções eficientes. 
+                    Com uma sólida formação acadêmica e profissional, possui experiência em análise de dados, modelagem de banco de dados, Python e SQL. 
+                    É motivado pela busca de inovação e otimização de processos, sempre apoiado em dados e técnicas bem estruturadas, sem deixar de lado a criatividade e a adaptação ao contexto.
+                </span>
+                <button aria-label="Entre em contato">
+                    <a href="#contact">Entre em contato</a>
+                </button>
+            </div>
+            <div class="home-img">
+                <img src="img/foto_perfil.jpeg" alt="Foto de perfil de Rafael Spumberg">
+            </div>
+        </section>
+
+        <section id="cv">
+            <h1>Currículo</h1>
+            <div class="education">
+                <div class="education-item">
+                    <h2>Bacharel em História</h2>
+                    <p>Minha formação inicial me proporcionou uma visão crítica e analítica sobre o passado e suas influências no presente. Aprimorei minhas habilidades de pesquisa, argumentação e interpretação de dados históricos, competências que hoje aplico na análise e modelagem de dados.</p>
+                </div>
+                <div class="education-item">
+                    <h2>Mestre em Museologia</h2>
+                    <p>No mestrado, aprofundei meu conhecimento sobre organização e preservação de informações, o que reforçou minha capacidade de trabalhar com grandes volumes de dados de forma estruturada. Desenvolvi habilidades em metodologia científica e análise qualitativa e quantitativa.</p>
+                </div>
+                <div class="education-item">
+                    <h2>Ciência de Dados e Inteligência Artificial - PUCRS</h2>
+                    <p>Atualmente cursando, essa formação me permite integrar conhecimento técnico e analítico para resolver problemas complexos. Trabalhando com Python, SQL e modelagem de dados, desenvolvo soluções eficientes para análise de informações e automação de processos.</p>
+                </div>
+                <a href="" download class="download-btn">
+                  Download
+              </a>
+            </div>
+        </section> 
+        
+        <section id="projects">
+          <h2>Projetos</h2>
+          <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                  <!-- Projeto 1: Power BI -->
+                  <div class="swiper-slide">
+                      <div class="project-img">
+                          <img src="img/Data-Vizualisation-924x512-1-e1722628032570.png" alt="Dashboard Power BI">
+                      </div>
+                      <div class="project-info">
+                          <h2>Power BI</h2>
+                          <p>Criação de dashboard interativo no Power BI.</p>
+                          <!-- Botão de Download -->
+                          <a href="https://github.com/RafaelSpumbergSeus/PowerBI/archive/refs/heads/main.zip" download class="download-btn">
+                            Download
+                          </a>
+                      </div>
+                  </div>
       
-      <section id="home">
-        <div class="home-info">
-          <div class="title">
-            <h1>Rafael Spumberg</h1> 
+                  <!-- Projeto 2: MongoDB -->
+                  <div class="swiper-slide">
+                      <div class="project-img">
+                          <img src="img/Mongodb-alternatives-1024x536.webp" alt="E-commerce">
+                      </div>
+                      <div class="project-info">
+                          <h2>MongoDB</h2>
+                          <p>Criação de lojas online de qualquer produto.</p>
+                          <!-- Botão de Download -->
+                          <a href="https://github.com/RafaelSpumbergSeus/Google-Colab-com-Mongo-DB/archive/refs/heads/main.zip" download class="download-btn">
+                              Download
+                          </a>
+                      </div>
+                  </div>
+      
+                  <!-- Projeto 3: Sistemas Completos -->
+                  <div class="swiper-slide">
+                      <div class="project-img">
+                          <img src="./img/sistema.png" alt="Sistema Completo">
+                      </div>
+                      <div class="project-info">
+                          <h2>Banco de Dados relacional</h2>
+                          <p>Criação de sistemas completos desde o back-end até o front-end.</p>
+                          <!-- Botão de Download -->
+                          <a href="https://github.com/RafaelSpumbergSeus/Exemplo-Banco-de-Dados-Relacional/archive/refs/heads/main.zip" download class="download-btn">
+                            Download
+                          </a>
+                      </div>
+                  </div>
+              </div>
+              <div class="swiper-button-next" aria-label="Next slide"></div>
+              <div class="swiper-button-prev" aria-label="Previous slide"></div>
+              <div class="swiper-pagination"></div>
           </div>
-          <h2>Sobre</h2>
-          <span class="home-position">Ciência de Dados e Inteligência Artificial - PUCRS</span>
-          <span class="home-resume">
-            Profissional de TI apaixonado por tecnologia, com um olhar crítico e voltado para soluções eficientes. 
-            Com uma sólida formação acadêmica e profissional, possui experiência em análise de dados, modelagem de banco de dados, Python e SQL. 
-            É motivado pela busca de inovação e otimização de processos, sempre apoiado em dados e técnicas bem estruturadas, sem deixar de lado a criatividade e a adaptação ao contexto.
-          </span>
-          <button>
-            <a href="#contact">Entre em contato</a>
-          </button>
-        </div>
-        <div class="home-img">
-          <img src="img/foto_perfil.jpeg" alt="Foto de perfil">
-        </div>
       </section>
+        
+        <section id="contact">
+            <h2>Contatos</h2>
+            <ul>
+                <li>
+                    E-mail: <a href="mailto:rafaelspumberg31@gmail.com">rafaelspumberg31@gmail.com</a>
+                </li>
+            </ul>
+            <div class="contact-buttons">
+                <a href="https://www.linkedin.com/in/rafael-spumberg" target="_blank" rel="noopener noreferrer" class="btn social-btn" aria-label="LinkedIn">
+                    <img src="img/linkedin.png" width="50px" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/RafaelSpumbergSeus" target="_blank" rel="noopener noreferrer" class="btn social-btn" aria-label="GitHub">
+                    <img src="img/github.png" width="50px" alt="GitHub">
+                </a>
+            </div>
+        </section>
 
-      <section id="cv">
-        <h1>Currículo</h1>
-        <div class="education">
-            <div class="education-item">
-                <h2>Bacharel em História</h2>
-                <p>Minha formação inicial me proporcionou uma visão crítica e analítica sobre o passado e suas influências no presente. Aprimorei minhas habilidades de pesquisa, argumentação e interpretação de dados históricos, competências que hoje aplico na análise e modelagem de dados.</p>
-            </div>
-            <div class="education-item">
-                <h2>Mestre em Museologia</h2>
-                <p>No mestrado, aprofundei meu conhecimento sobre organização e preservação de informações, o que reforçou minha capacidade de trabalhar com grandes volumes de dados de forma estruturada. Desenvolvi habilidades em metodologia científica e análise qualitativa e quantitativa.</p>
-            </div>
-            <div class="education-item">
-                <h2>Ciência de Dados e Inteligência Artificial - PUCRS</h2>
-                <p>Atualmente cursando, essa formação me permite integrar conhecimento técnico e analítico para resolver problemas complexos. Trabalhando com Python, SQL e modelagem de dados, desenvolvo soluções eficientes para análise de informações e automação de processos.</p>
-            </div>
-        </div>
-    </section> 
- 
-      <section id="projects">
-        <h2>Projetos</h2>
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="project-img">
-                <img src="./img/site.png" alt="Dashboard Power BI">
-              </div>
-              <div class="project-info">
-                <h2>Dashboard Power BI</h2>
-                <p>Criação de dashboard interativo no Power BI.</p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="project-img">
-                <img src="./img/shop.png" alt="E-commerce">
-              </div>
-              <div class="project-info">
-                <h2>E-commerce</h2>
-                <p>Criação de lojas online de qualquer produto.</p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="project-img">
-                <img src="./img/sistema.png" alt="Sistema Completo">
-              </div>
-              <div class="project-info">
-                <h2>Sistemas completos</h2>
-                <p>Criação de sistemas completos desde o back-end até o front-end.</p>
-              </div>
-            </div>
-          </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
-      </div>
-    </section>
-  
-    <section id="contact">
-      <h2>Contatos</h2>
-      <ul>
-          <!--<li>-->
-          E-mail: <a href="mailto:rafaelspumberg31@gmail.com">rafaelspumberg31@gmail.com</a>
-          <!--</li>-->
-      </ul>
-      <div class="contact-buttons">
-        <a href="https://www.linkedin.com/in/rafael-spumberg" target="_blank" class="btn social-btn">
-          <img src="img/linkedin.png" width="50px" alt="LinkedIn">
-        </a>
-        <a href="https://github.com/RafaelSpumbergSeus" target="_blank" class="btn social-btn">
-          <img src="img/github.png" width="50px" alt="GitHub">
-        </a>
-      </div>
-    </section>
-
-    <footer>
-      <p>© Copyright 2025 Rafael Spumberg.</p>
-      <p>Todos os direitos reservados.</p>
-    </footer>
+        <footer>
+            <p>© Copyright 2025 Rafael Spumberg.</p>
+            <p>Todos os direitos reservados.</p>
+        </footer>
     </main>  
-  
+    
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
