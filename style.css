@@ -168,6 +168,7 @@ section#projects {
   box-shadow: 0 1px 2px rgb(248, 248, 248);
   object-fit: cover;
   width: 80%;
+  border-radius: 10px; /* Adicionado borda arredondada */
 }
 
 .project-info {
@@ -175,6 +176,7 @@ section#projects {
   display: flex;
   flex-direction: column;
   text-align: start;
+  gap: 10px; /* Espaçamento entre os elementos */
 }
 
 .swiper {
@@ -199,31 +201,31 @@ section#projects {
   background-color: #3c73e0;
 }
 
-/* BOTÃO DE DOWNLOAD */
-.download-btn {
+/* BOTÃO DE DOWNLOAD E CERTIFICADOS */
+.download-btn, .botao {
   display: inline-block;
   margin-top: 20px;
-  padding: 8px 12px;
+  padding: 12px 24px; /* Aumentado o padding */
   background-color: #3c73e0;
   color: white;
   text-decoration: none;
   border-radius: 8px;
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 500;
   text-align: center;
   transition: all 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border: 2px solid transparent;
-  width: 150px;
+  width: 150px; /* Largura automática */
 }
 
-.download-btn:hover {
+.download-btn:hover, .botao:hover {
   background-color: #2c5bb8;
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
   transform: translateY(-2px);
 }
 
-.download-btn:active {
+.download-btn:active, .botao:active {
   background-color: #1a3a7a;
   transform: translateY(0);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -300,8 +302,7 @@ footer {
     justify-content: center;
   }
 
-  .home-info,
-  .home-img {
+  .home-info, .home-img {
     width: 100%;
     padding: 10px;
   }
@@ -318,11 +319,4 @@ footer {
   .project-info {
     width: 80%;
   }
-
-  @media (max-width: 768px) {
-    .download-btn {
-        padding: 10px 20px;
-        font-size: 14px;
-    }
-}
 }
