@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  background-color: #ced1d1;
+  background-color: #f0f6f6;
   display: flex;
   justify-content: center;
 }
@@ -129,7 +129,7 @@ section#home {
 #cv {
   width: 100%;
   padding: 60px 20px;
-  background-color: #ced1d1;
+  background-color: #f0f6f6;
   text-align: center;
   scroll-margin-top: 160px;
 }
@@ -219,7 +219,8 @@ section#projects {
   transition: all 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border: 2px solid transparent;
-  width: 150px; /* Largura automática */
+  width: 150px;
+  flex: 1 /* Largura automática */
 }
 
 .download-btn:hover, .botao:hover {
@@ -232,6 +233,14 @@ section#projects {
   background-color: #1a3a7a;
   transform: translateY(0);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-container {
+  display: flex;
+  gap: 15px; /* Espaçamento entre os botões */
+  justify-content: center; /* Centraliza os botões */
+  align-items: center;
+  flex-wrap: wrap; /* Permite que os botões quebrem linha em telas pequenas */
 }
 
 /* CONTACTS */
@@ -280,7 +289,7 @@ button {
 
 /* FOOTER */
 footer {
-  box-shadow: 0px -1px 0px 0px #ffffff;
+  box-shadow: 0px -1px 0px 0px #000000;
   padding: 50px;
   text-align: center;
 }
