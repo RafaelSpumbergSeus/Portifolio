@@ -244,6 +244,28 @@ section#projects {
   flex-wrap: wrap; /* Permite que os botões quebrem linha em telas pequenas */
 }
 
+.download-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #2e4779;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.download-btn:hover {
+  background-color: #7499e5;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
 /* CONTACTS */
 #contact {
   height: calc(100vh + 80px);
