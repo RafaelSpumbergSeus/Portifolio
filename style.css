@@ -152,103 +152,93 @@ section#home {
   }
 }
 
-/* Seção Skills */
-#skills {
-  padding: 80px 20px;
-  background-color: #f0f6f6;
-  text-align: center;
-}
-
 /* Seção Skills Compacta */
 #skills {
-  padding: 60px 20px;
-  background-color: #f0f6f6;
-  text-align: center;
-  max-width: 800px;
+  padding: 400px 200px;
+  max-width: 600px;
   margin: 0 auto;
 }
 
 #skills h1 {
-  margin-bottom: 30px;
-  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 .skills-columns {
   display: flex;
-  justify-content: center;
   gap: 30px;
+  justify-content: center;
 }
 
-.skills-left, .skills-right {
-  width: 45%;
+.skills-column {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .skill-item {
-  margin-bottom: 25px;
+  margin-bottom: 15px;
+  padding: 18px;
   background: white;
-  padding: 15px;
-  border-radius: 8px;
+  border-radius: 4px;
+  justify-content: space-between;
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 
-.skill-info {
+.skill-header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 10px;
   margin-bottom: 10px;
 }
 
-.skill-info img {
+.skill-header img {
   width: 30px;
-  height: 30px;
-  object-fit: contain;
+  height: 44px;
+  margin-right: 38px;
 }
 
-.skill-info h3 {
+.skill-header h3 {
   margin: 0;
-  font-size: 1rem;
-  color: #333;
-}
-
-.progress-container {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.progress-bar {
-  height: 8px;
-  background-color: #3c73e0;
-  border-radius: 4px;
+  font-size: 0.9rem;
   flex-grow: 1;
 }
 
-.progress-container span {
+.skill-header .percent {
   font-size: 0.8rem;
-  color: #666;
-  width: 40px;
-  text-align: right;
+  font-weight: 700;
+  color: #2e4779;
 }
 
-/* Cores específicas para cada skill */
-.skill-item:nth-child(1) .progress-bar { background-color: #3776AB; } /* Python */
-.skill-item:nth-child(2) .progress-bar { background-color: #F29111; } /* SQL */
-.skill-item:nth-child(3) .progress-bar { background-color: #F2C811; } /* Power BI */
-.skill-item:nth-child(4) .progress-bar { background-color: #47A248; } /* MongoDB */
+.progress-bg {
+  height: 6px;
+  background: #e0e0e0;
+  border-radius: 4px;
+  margin-top: 12px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 3px;
+  width: 0;
+  transition: width 1s ease-out;
+}
 
 /* Responsivo */
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .skills-columns {
       flex-direction: column;
-      gap: 15px;
   }
   
-  .skills-left, .skills-right {
+  .skills-column {
       width: 100%;
   }
   
   .skill-item {
-      margin-bottom: 15px;
+      margin-bottom: 12px;
   }
 }
 
