@@ -152,6 +152,106 @@ section#home {
   }
 }
 
+/* Seção Skills */
+#skills {
+  padding: 80px 20px;
+  background-color: #f0f6f6;
+  text-align: center;
+}
+
+/* Seção Skills Compacta */
+#skills {
+  padding: 60px 20px;
+  background-color: #f0f6f6;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#skills h1 {
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+}
+
+.skills-columns {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.skills-left, .skills-right {
+  width: 45%;
+}
+
+.skill-item {
+  margin-bottom: 25px;
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.skill-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.skill-info img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.skill-info h3 {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.progress-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.progress-bar {
+  height: 8px;
+  background-color: #3c73e0;
+  border-radius: 4px;
+  flex-grow: 1;
+}
+
+.progress-container span {
+  font-size: 0.8rem;
+  color: #666;
+  width: 40px;
+  text-align: right;
+}
+
+/* Cores específicas para cada skill */
+.skill-item:nth-child(1) .progress-bar { background-color: #3776AB; } /* Python */
+.skill-item:nth-child(2) .progress-bar { background-color: #F29111; } /* SQL */
+.skill-item:nth-child(3) .progress-bar { background-color: #F2C811; } /* Power BI */
+.skill-item:nth-child(4) .progress-bar { background-color: #47A248; } /* MongoDB */
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .skills-columns {
+      flex-direction: column;
+      gap: 15px;
+  }
+  
+  .skills-left, .skills-right {
+      width: 100%;
+  }
+  
+  .skill-item {
+      margin-bottom: 15px;
+  }
+}
+
 /* PROJECTS */
 section#projects {
   height: calc(100vh + 80px);
