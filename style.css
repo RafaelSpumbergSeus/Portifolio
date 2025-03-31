@@ -185,13 +185,15 @@ section#home {
   border-radius: 4px;
   justify-content: space-between;
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  position: relative;
 }
 
 .skill-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10px;
+  width: 100%;
+  
 }
 
 .skill-header img {
@@ -207,6 +209,9 @@ section#home {
 }
 
 .skill-header .percent {
+  position: absolute;
+  right: 18px; /* Mesmo padding do .skill-item */
+  top: 50px; /* Ajuste conforme a altura do cabeçalho */
   font-size: 0.8rem;
   font-weight: 700;
   color: #2e4779;
@@ -218,6 +223,7 @@ section#home {
   border-radius: 4px;
   margin-top: 12px;
   overflow: hidden;
+  width: 100%;
 }
 
 .progress-fill {
@@ -225,6 +231,17 @@ section#home {
   border-radius: 3px;
   width: 0;
   transition: width 1s ease-out;
+  position: relative;
+}
+
+progress-fill::after {
+  content: attr(data-progress) "%";
+  position: absolute;
+  right: 5px;
+  top: -20px;
+  font-size: 0.7rem;
+  color: #2e4779;
+  font-weight: bold;
 }
 
 /* Responsivo */
