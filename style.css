@@ -154,7 +154,7 @@ section#home {
 
 /* Seção Skills Compacta */
 #skills {
-  padding: 400px 200px;
+  padding: 100px 70px;
   max-width: 600px;
   margin: 0 auto;
 }
@@ -193,7 +193,8 @@ section#home {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  
+  gap: 20px; 
+  min-width: 120px; 
 }
 
 .skill-header img {
@@ -206,12 +207,12 @@ section#home {
   margin: 0;
   font-size: 0.9rem;
   flex-grow: 1;
+  white-space: nowrap;
 }
 
 .skill-header .percent {
-  position: absolute;
-  right: 18px; /* Mesmo padding do .skill-item */
-  top: 50px; /* Ajuste conforme a altura do cabeçalho */
+  position: relative;
+  margin-left: 20px; /* Adiciona um espaço extra */
   font-size: 0.8rem;
   font-weight: 700;
   color: #2e4779;
