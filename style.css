@@ -23,9 +23,15 @@ body::-webkit-scrollbar-thumb {
 
 /* Navbar */
 .navbar {
-  background-color: #ced1d1 !important;
+  background-color: #d1d3d4 !important;
   box-shadow: 0 1px 0 #ffffff;
   padding: 10px 0;
+  border-bottom: none;
+}
+
+.navbar-toggler {
+  background-color: transparent !important; /* Para não destoar */
+  border: none;
 }
 
 .navbar-brand {
@@ -41,6 +47,10 @@ body::-webkit-scrollbar-thumb {
 
 .nav-link:hover {
   color: #7499e5 !important;
+}
+
+.bg-grey {
+  background-color: #d1d3d4 !important;
 }
 
 /* Seção Home */
