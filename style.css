@@ -92,51 +92,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-/* Seção Skills */
-#skills {
-  padding: 80px 0;
-}
-
-.skill-item {
-  margin-bottom: 20px;
-  padding: 20px;
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-}
-
-.skill-header {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.skill-header img {
-  width: 30px;
-  height: 30px;
-  margin-right: 15px;
-}
-
-.skill-header h3 {
-  margin: 0;
-  font-size: 1rem;
-  flex-grow: 1;
-}
-
-.skill-header .percent {
-  font-size: 0.9rem;
-  font-weight: 700;
-  color: #2e4779;
-}
-
-.progress {
-  height: 6px;
-  background-color: #e9ecef;
-}
-
-.progress-bar {
-  transition: width 1s ease-out;
-}
 
 /* Seção Projetos */
 #projects {
@@ -293,4 +248,53 @@ footer {
     text-align: right;
     margin-top: 5px;
   }
+}
+
+/* NOVA ESTILIZAÇÃO - Skills com níveis de proficiência */
+.skill-item {
+  margin-bottom: 16px;
+  padding: 16px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.skill-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skill-header h3 {
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.skill-header img {
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+}
+
+.skill-badge {
+  font-size: 0.7rem;
+  padding: 4px 8px;
+  font-weight: 500;
+  border-radius: 12px;
+}
+
+/* Cores de nível */
+.skill-badge.avancado {
+  background-color: #28a745;
+  color: white;
+}
+
+.skill-badge.intermediario {
+  background-color: #a0873a;
+  color: #212529;
+}
+
+.skill-badge.basico {
+  background-color: #329af5;
+  color: white;
 }
