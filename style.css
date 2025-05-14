@@ -92,7 +92,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-
 /* Seção Projetos */
 #projects {
   padding: 80px 0;
@@ -290,11 +289,11 @@ footer {
 }
 
 .skill-badge.intermediario {
-  background-color: #a0873a;
-  color: #212529;
+  background-color: #3083bb;
+  color: #fbfbfb;
 }
 
 .skill-badge.basico {
-  background-color: #329af5;
+  background-color: #b7bb51;
   color: white;
 }
